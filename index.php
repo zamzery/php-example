@@ -40,7 +40,7 @@ require_once('./cliente_formas_digitales.php');
 		$parametros = new Parametros();
 
 		$parametros->accesos = $autentica;
-		$parametros->comprobante = $clienteFD->sellarXML($certFile, $keyFile);;
+		$parametros->comprobante = $clienteFD->sellarXML($certFile, $keyFile);
 		
 		/* se manda el xml a timbrar */
 		$responseTimbre = $clienteFD->timbrar($parametros); 
